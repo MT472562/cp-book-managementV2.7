@@ -1,0 +1,59 @@
+.pickup_book {
+    flex-flow: column;
+    text-align: center;
+}
+.pickup_book img{
+    max-width: 9rem;
+}
+
+.pickup_book {
+    margin: 1em auto;
+    padding: 1em;
+    /*内側余白*/
+    background-color: #789D9C;
+    /*背景色*/
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+.pickup_book:after {
+    position: absolute;
+    content: '';
+    right: 0px;
+    top: 0px;
+    border-width: 0 30px 30px 0;
+    border-style: solid;
+    border-color: #ccc#8799AA #ccc;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+table,
+th,
+tr,
+td {
+    border: 1px solid;
+}
+
+.pickup_book {
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    right: 25%;
+}
+
+.headline {
+    margin-bottom: 0.5rem;
+    color: #000;
+    margin-top: 0;
+}
+
+.explanation {
+    margin-bottom: 1rem;
+    color: #3a3a3a;
+    font-size: 0.8rem;
+}
+@media screen and (max-width:1024px){
+    .pickup_book{
+        margin-top: 5rem;
+    }
+}

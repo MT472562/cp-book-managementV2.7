@@ -1,0 +1,76 @@
+body {
+    background-color: #15202B;
+}
+
+* {
+    color: #8799AA;
+    font-family:
+        "Hiragino Kaku Gothic ProN",
+        "ヒラギノ角ゴ ProN W3",
+        sans-serif;
+}
+
+.menu-list {
+    display: none;
+}
+
+.menu-open .menu-list {
+    display: block;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#home_icon,
+#account_icon,
+#search_icon,
+#lending_icon,
+#lending_icon,
+#return_icon,
+#new_book_icon,
+#info_icon,
+#update_icon,
+#inventory_icon{
+    width: 3rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem
+}
+
+#home_icon:hover,
+#account_icon:hover,
+#search_icon:hover,
+#lending_icon:hover,
+#lending_icon:hover,
+#return_icon:hover,
+#new_book_icon:hover,
+#info_icon:hover ,
+#update_icon:hover,
+#inventory_icon:hover{
+    width: 3.5rem;
+    padding: 0.25rem 0.25rem 0.25rem 0.25rem
+}
+
+@media screen and (max-width:1024px) {
+    header {
+        display: flex;
+        /* text-align: center; */
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #home_icon,
+    #account_icon,
+    #search_icon,
+    #lending_icon,
+    #lending_icon,
+    #return_icon,
+    #new_book_icon,
+    #info_icon,
+    #update_icon,
+    #inventory_icon{
+        border: solid #505054;
+        border-radius: 1rem;
+    }
+}

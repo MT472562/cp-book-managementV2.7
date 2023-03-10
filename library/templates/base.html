@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="email=no,telephone=no,address=no" />
+    <meta name="description" content="NS高の図書管理システムです。このサイトは限られたユーザーのみが使用を許可されています。" />
+    <link rel="apple-touch-icon-precomposed" href="img_svg_video_icon/icon.jpeg" />
+    <link rel="icon" href="img_svg_video_icon/icon.jpeg" />
+    <title>NS高図書管理システム</title>
+    <meta name="author" content="NS高福岡キャンパス図書委員会委員長">
+    <link rel="stylesheet" href="img_svg_video_icon/base.css">
+    <link rel="stylesheet" href="img_svg_video_icon/style.css">
+    {% block head %}
+    {% endblock %}
+</head>
+
+<body>
+    <header>
+        <a href="{{ url_for('index') }}"><img src="img_svg_video_icon/home.svg" id="home_icon"></a>
+        <a href="{{ url_for('account') }}"><img src="img_svg_video_icon/account.svg" id="account_icon"></a>
+        <a href="{{ url_for('search') }}"><img src="img_svg_video_icon/search.svg" id="search_icon"></a>
+        <a href="{{ url_for('lending') }}"><img src="img_svg_video_icon/lending.svg" id="lending_icon"></a>
+        <a href="{{ url_for('areturn') }}"><img src="img_svg_video_icon/return.svg" id="return_icon"></a>
+        <a href="{{ url_for('new_book') }}"><img src="img_svg_video_icon/new_book.svg" id="new_book_icon"></a>
+        <a href="{{ url_for('keyword_update') }}"><img src="img_svg_video_icon/update.svg" id="update_icon"></a>
+        <a href="{{ url_for('inventory') }}"><img src="img_svg_video_icon/inventory.svg" id="inventory_icon"></a>
+        <a href="{{ url_for('ainfo') }}"><img src="img_svg_video_icon/info.svg" id="info_icon"></a>
+    </header>
+
+    {% block body %}
+    {% endblock %}
+
+</body>
+
+</html>
